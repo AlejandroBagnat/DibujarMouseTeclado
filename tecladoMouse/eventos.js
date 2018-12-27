@@ -43,13 +43,13 @@ var teclas = {
 
   function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
   {
-    lienzo.beginPath();
-    lienzo.strokeStyle = color;
-    lienzo.lineWidth = 3;
-    lienzo.moveTo(xinicial, yinicial);
-    lienzo.lineTo(xfinal, yfinal);
-    lienzo.stroke();
-    lienzo.closePath();
+    lienzo.beginPath();                 // Inicia el trazo 
+    lienzo.strokeStyle = color;         // Estilo de trazo
+    lienzo.lineWidth = 3;               // Ancho de trazo
+    lienzo.moveTo(xinicial, yinicial);  // Donde comienza la linea
+    lienzo.lineTo(xfinal, yfinal);      // Donde termina la linea
+    lienzo.stroke();                    // Dibuja el estilo de trazo
+    lienzo.closePath();                 // Cirra el dibujo
   }
 
   
